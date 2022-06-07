@@ -76,10 +76,7 @@ np.random.seed(seed)
 random.seed(seed)
 torch.manual_seed(seed)
 auroc_value = np.zeros(100)
-# Train MLP and select the optimal model on the valid data
-# It should be noted that the valid data here is for model interpretation.
-# Such data for interpretation can also be called valid data which is different from the common notion of valid data
-# The interpretation data can come from training data or validation data
+
 for i in range(1, 501):
     train(i)
     i_tmp = i % 5

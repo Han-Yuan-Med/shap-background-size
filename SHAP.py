@@ -6,7 +6,8 @@ import numpy as np
 # Calculate SHAP values and global variable rankings under each background dataset
 # Background datasets are named as x repetition sample size y
 # x stands for the simulation times and y means the sample number in each background dataset
-# In our example, x=100 and y=50, which means 100 background datasets with sample size of 50 will be used
+# In our example, x=100 and y=50, which means 100 background datasets will be used.
+# In each background dataset, there are 50 samples
 model_optimal.eval()
 orderlist = []
 # i here stands for the simulation times: 100
