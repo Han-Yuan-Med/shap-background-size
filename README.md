@@ -19,6 +19,6 @@ The four python files `MLP`, `SHAP`, `BLUE`, and `Jaccard` constitute the 4-step
 - STEP (iii): Run the `BLUE` file. Based on the 100 rankings from STEP (ii), we will quantify the instabilities of SHAP-based feature rankings by the whole rankings-based BLUE or the quartile-based BLUE. BLUE is applied for exact comparison between two rankings.
 - STEP (iv): Run the `Jaccard` file. Based on the 100 rankings from STEP (ii), we will quantify the instabilities of SHAP-based feature rankings by the quartile-based Jaccard index. Different from BLUE, Jaccard index is used for evaluating the fuzzy similarity between variable rankings.
 ### Citation
-Yuan H, Liu M, Krauthammer M, Kang L, Miao C, Wu Y. An empirical study of the effect of background data size on the stability of SHapley Additive exPlanations (SHAP) for deep learning models. arXiv. 2022.
+Yuan H, Liu M, Kang L, Miao C, Wu Y. An empirical study of the effect of background data size on the stability of SHapley Additive exPlanations (SHAP) for deep learning models. arXiv. 2022.
 ### Contact
 - Han Yuan (Email: <yuanhannku@163.com>)
