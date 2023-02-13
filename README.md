@@ -3,8 +3,7 @@
 - [Results](#results)
 - [Datasets](#datasets)
 - [Functions and pipeline](#functions-and-pipeline)
-- [Citation](#citation)
-- [Contact](#contact)
+
 ### Background
 Nowadays, the interpretation of why a machine learning (ML) model makes certain inferences is as crucial as the accuracy of such inferences. Some ML models like the decision tree possess inherent interpretability that can be directly comprehended by humans. Others like artificial neural networks (ANN), however, rely on external methods to uncover the deduction mechanism. SHapley Additive exPlanations (SHAP) is one of such external methods, which requires a background dataset when interpreting ANNs. Generally, a background dataset consists of instances randomly sampled from the training dataset. However, the sampling size and its effect on SHAP remain to be unexplored. 
 ### Results
@@ -18,7 +17,3 @@ The four python files `MLP`, `SHAP`, `BLUE`, and `Jaccard` constitute the 4-step
 - STEP (ii): Run the `SHAP` file. In this file, SHAP will be used to interpret the optimal model's behavior on the `valid_data`. As indicated above, a background dataset is necessary for the SHAP calculation. Generally, people randomly sample some data from the training data, which leads to the fluctuations of SHAP-based global feature rankings. Here we samples 100 sets of background data and in each set, there are 50 samples. Based on each set, we will have a global feature ranking. Finally, we will get 100 rankings from 100 sets of background data.
 - STEP (iii): Run the `BLUE` file. Based on the 100 rankings from STEP (ii), we will quantify the instabilities of SHAP-based feature rankings by the whole rankings-based BLUE or the quartile-based BLUE. BLUE is applied for exact comparison between two rankings.
 - STEP (iv): Run the `Jaccard` file. Based on the 100 rankings from STEP (ii), we will quantify the instabilities of SHAP-based feature rankings by the quartile-based Jaccard index. Different from BLUE, Jaccard index is used for evaluating the fuzzy similarity between variable rankings.
-### Citation
-Yuan H, Liu M, Kang L, Miao C, Wu Y. An empirical study of the effect of background data size on the stability of SHapley Additive exPlanations (SHAP) for deep learning models. arXiv. 2022.
-### Contact
-- Han Yuan (Email: <yuanhannku@163.com>)
